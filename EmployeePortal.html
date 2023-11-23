@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px 0;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Employer Portal</h1>
+
+    <!-- Update Company Information Form -->
+    <h2>Update Company Information</h2>
+    <form id="companyInfoForm">
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName" required>
+
+        <label for="companyDescription">Company Description:</label>
+        <textarea id="companyDescription" name="companyDescription" rows="4"></textarea>
+
+        <button type="button" onclick="updateCompanyInfo()">Update Company Information</button>
+    </form>
+
+    <!-- View Resumes of Job Seekers -->
+    <h2>View Resumes of Job Seekers</h2>
+    <table id="resumeTable">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Applied Date</th>
+            <!-- Add more resume details as needed -->
+        </tr>
+        <!-- Display job seeker resumes dynamically here -->
+    </table>
+
+    <script>
+        function updateCompanyInfo() {
+            // Simulate updating company information (replace this with actual logic)
+            alert('Company information updated!');
+        }
+
+        // Simulate loading job seeker resumes (replace this with actual data retrieval)
+        function loadJobSeekerResumes() {
+            // Example data (replace this with actual data)
+            const resumes = [
+                { name: 'John Doe', email: 'john@example.com', phone: '123-456-7890', applied_date:'2056-12-19'},
+                { name: 'Jane Smith', email: 'jane@example.com', phone: '987-654-3210', applied_date:'2058-08-10'},
+                // Add more resumes as needed
+            ];
+
+            const table = document.getElementById('resumeTable');
+
+            // Populate the table with job seeker resumes
+            resumes.forEach(resume => {
+                const row = table.insertRow();
+                const nameCell = row.insertCell(0);
+                const emailCell = row.insertCell(1);
+                const phoneCell = row.insertCell(2);
+                const applied_dateCell = row.insertCell(3);
+
+                nameCell.textContent =resume.name;
+                emailCell.textContent = resume.email;
+                phoneCell.textContent = resume.phone;
+                applied_dateCell.textContent=resume.applied_date;
+                // Add more cells for additional resume details
+            });
+        }
+
+        // Load job seeker resumes when the page loads
+        loadJobSeekerResumes();
+    </script>
+
+</body>
+</html>

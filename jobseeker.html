@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Job Seeker</title>
+        <!-- Include Bootstrap CSS and JavaScript -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="scripts/js/jquery-3.7.1.min.js"></script>
+        <!-- <script src="scripts/js/popper.min.js"></script> -->
+        <script src="scripts/js/bootstrap.min.js"></script>
+        <link href="css/nexa-rust-extras.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/my-styles.css" rel="stylesheet">
+    
+    </head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-bgcolor navbar-color">
+        <div class="container">
+             <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="80pt" height="40pt"
+                viewBox="0 0 992.000000 251.000000" preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,251.000000) scale(0.100000,-0.100000)" fill="white" stroke="none">
+                    <path
+                        d="M992 2231 c-8 -5 -12 -21 -10 -37 2 -23 8 -29 28 -29 18 0 26 6 28 23 3 22 -13 52 -27 52 -3 0 -12 -4 -19 -9z" />
+                    <path
+                        d="M1240 2178 c-18 -13 -49 -52 -69 -88 -21 -36 -45 -66 -54 -68 -10 -2 -34 6 -53 17 -50 30 -66 26 -103 -19 -17 -22 -41 -40 -51 -40 -11 0 -63 11 -117 25 -88 23 -104 24 -172 15 -41 -6 -86 -17 -99 -26 -31 -20 -62 -73 -62 -105 0 -26 1 -26 133 -44 154 -21 194 -34 201 -67 3 -13 7 -79 10 -148 19 -420 38 -669 57 -742 10 -42 19 -98 19 -124 0 -46 -1 -47 -19 -30 -10 10 -112 64 -227 122 -206 104 -207 104 -280 104 -61 0 -75 -3 -83 -18 -12 -22 -31 -199 -31 -285 0 -59 0 -60 19 -43 30 27 63 5 59 -37 -2 -27 -8 -33 -30 -35 -35 -4 -35 -10 2 -60 55 -77 168 -147 285 -178 65 -18 67 -18 60 6 -8 26 11 60 35 60 25 0 42 -33 34 -66 l-7 -26 59 7 c127 14 192 44 345 157 l76 56 26 109 c46 187 60 318 63 583 3 234 4 248 28 305 14 33 30 101 36 150 21 165 28 174 167 200 55 10 83 21 96 36 34 41 21 66 -64 122 -31 21 -91 73 -132 117 -83 89 -101 95 -157 58z m19 -374 c-15 -18 -28 -18 -36 2 -8 20 17 36 34 22 10 -8 10 -14 2 -24z m-119 -932 c0 -57 -27 -155 -40 -147 -6 4 -10 40 -10 82 0 57 4 81 17 95 26 28 33 22 33 -30z m-396 -179 c64 -24 96 -54 96 -93 0 -32 -25 -90 -44 -102 -6 -4 -56 -8 -111 -8 -112 0 -145 13 -145 56 0 32 24 90 56 131 30 39 70 43 148 16z" />
+                    <path
+                        d="M4640 2045 c0 -30 5 -39 31 -53 66 -36 81 -53 75 -83 -5 -26 -3 -29 22 -29 80 -1 198 -102 302 -260 214 -326 477 -1032 523 -1403 6 -53 15 -97 20 -97 19 0 62 60 98 135 38 82 95 245 195 559 57 179 125 336 146 336 21 0 105 -96 148 -169 114 -192 219 -559 242 -851 l3 -35 50 47 c104 97 149 207 220 536 53 246 86 367 118 425 l22 42 5 -59 c5 -56 6 -58 22 -39 68 75 188 470 214 700 6 56 8 61 25 53 10 -6 23 -10 29 -10 14 0 170 149 170 162 0 4 -123 8 -273 8 -273 0 -274 0 -295 -23 -12 -13 -22 -32 -22 -43 0 -11 38 -57 90 -109 50 -49 90 -96 90 -104 0 -8 -31 -71 -70 -140 -103 -188 -149 -310 -180 -490 -21 -116 -50 -135 -50 -32 0 90 -23 164 -122 385 -94 212 -112 274 -106 369 3 62 7 72 33 94 22 20 36 24 63 20 28 -5 32 -4 22 8 -17 21 -64 32 -240 60 -141 22 -380 45 -472 45 -34 0 -40 -4 -58 -40 l-20 -40 48 -24 c67 -34 158 -135 199 -222 63 -133 66 -229 13 -394 -42 -127 -121 -268 -165 -293 -10 -5 -26 18 -60 88 -46 95 -78 131 -107 120 -11 -5 -22 27 -52 152 -45 184 -100 360 -121 383 -13 14 -10 20 25 55 22 22 40 42 40 46 0 3 -18 14 -40 24 l-40 18 20 22 c11 12 20 24 20 28 0 9 -80 53 -122 66 -32 11 -42 9 -80 -9 -60 -29 -255 -40 -310 -17 -42 17 -47 31 -22 58 15 17 15 18 -7 23 -34 8 -259 36 -286 36 -20 0 -23 -5 -23 -35z m2164 -812 c-9 -18 -21 -33 -27 -33 -16 0 -2 106 19 137 l19 28 3 -50 c2 -34 -2 -61 -14 -82z m-1378 30 c10 -21 20 -65 22 -98 l4 -60 -30 28 c-32 30 -52 90 -52 152 0 32 2 35 19 26 10 -6 27 -27 37 -48z m99 17 c0 -32 -2 -35 -30 -35 -24 0 -31 5 -33 23 -6 38 5 54 35 50 25 -3 28 -7 28 -38z m135 -269 l104 -123 -25 -97 c-13 -53 -28 -95 -33 -95 -13 2 -110 184 -137 254 -11 30 -25 79 -30 108 -10 52 -4 102 10 86 4 -5 54 -65 111 -133z m-131 -147 c30 -38 27 -54 -9 -54 -28 0 -30 2 -30 40 0 47 10 50 39 14z m131 -301 c0 -21 -29 -15 -55 12 -21 21 -25 33 -25 87 l1 63 39 -75 c21 -41 39 -81 40 -87z" />
+                    <path d="M1710 1920 c-16 -30 -3 -60 25 -60 18 0 26 7 31 25 12 46 -35 75 -56 35z" />
+                    <path d="M8732 1659 c2 -6 8 -10 13 -10 5 0 11 4 13 10 2 6 -4 11 -13 11 -9 0 -15 -5 -13 -11z" />
+                    <path
+                        d="M8430 1647 c0 -13 11 -29 93 -138 47 -61 48 -66 45 -119 -2 -30 -8 -62 -12 -71 -5 -12 -1 -18 14 -22 13 -3 20 -12 18 -19 -7 -20 -36 -21 -40 -1 -3 11 -12 -4 -26 -40 -29 -75 -28 -87 3 -87 66 0 105 49 120 152 8 53 34 100 68 122 30 21 117 33 117 17 0 -18 30 -13 139 24 72 24 103 30 106 22 16 -50 24 -148 15 -173 -6 -15 -77 -116 -159 -223 -149 -197 -301 -418 -360 -523 -29 -51 -35 -56 -66 -56 -68 0 -165 -66 -165 -113 0 -36 70 -42 572 -46 l478 -4 52 -35 c29 -18 55 -34 59 -34 3 0 18 9 32 20 49 39 80 185 81 388 1 140 -3 151 -48 152 -31 0 -84 -68 -138 -180 -73 -147 -116 -218 -141 -235 -19 -12 -46 -12 -207 3 l-185 17 -3 27 c-2 14 6 44 16 65 11 21 55 124 98 228 116 283 354 721 354 654 0 -45 -78 -231 -156 -371 -25 -47 -44 -92 -42 -105 2 -17 43 43 149 220 130 216 151 245 193 272 141 90 170 112 177 133 8 21 7 22 -59 22 -37 0 -132 -7 -212 -15 -80 -8 -206 -15 -280 -15 -138 0 -163 4 -505 80 -105 23 -195 26 -195 7z m774 -329 c-16 -32 -31 -48 -46 -48 -16 0 -7 20 23 55 38 42 47 40 23 -7z m-55 -167 c13 -24 -9 -57 -33 -48 -16 6 -22 47 -9 60 12 13 32 7 42 -12z m-239 -189 c-47 -90 -125 -190 -138 -177 -3 3 14 44 38 92 39 80 120 183 142 183 5 0 -14 -44 -42 -98z m90 -10 c0 -19 -18 -42 -32 -42 -12 0 -9 35 4 48 17 17 28 15 28 -6z m516 -389 c-3 -7 -12 -13 -21 -13 -21 0 -20 82 3 128 l17 37 3 -69 c2 -38 1 -75 -2 -83z m-988 -116 c4 -33 -22 -47 -45 -24 -22 21 -8 59 20 55 16 -2 23 -11 25 -31z" />
+                    <path
+                        d="M7250 1594 c0 -48 49 -98 111 -113 86 -22 128 -43 159 -77 l30 -35 0 -192 c-1 -304 -35 -569 -92 -713 -27 -67 -70 -99 -150 -110 -34 -5 -48 -11 -48 -22 0 -13 19 -14 153 -8 83 3 192 11 242 16 l90 9 30 -29 c39 -38 58 -37 172 1 108 36 114 47 60 113 -19 23 -41 54 -50 71 l-15 30 -13 -28 c-14 -31 -21 -33 -40 -10 -18 21 -17 411 0 553 37 296 80 388 189 405 17 3 48 8 68 11 33 5 114 65 114 85 0 5 -86 9 -190 9 l-190 0 -42 30 c-22 17 -47 30 -54 30 -6 0 -35 -12 -63 -26 -77 -41 -116 -40 -290 0 -85 20 -160 36 -167 36 -9 0 -14 -12 -14 -36z m480 -709 c0 -8 -7 -15 -15 -15 -8 0 -15 7 -15 15 0 8 7 15 15 15 8 0 15 -7 15 -15z m-12 -322 c3 -101 1 -143 -7 -143 -49 0 -77 234 -39 329 l10 26 16 -35 c10 -24 17 -81 20 -177z" />
+                    <path
+                        d="M3268 1605 c-105 -17 -197 -40 -211 -54 -7 -7 -6 -15 2 -25 10 -12 34 -15 116 -13 92 2 107 0 132 -19 l28 -21 3 -420 c2 -374 0 -422 -14 -434 -11 -9 -20 -10 -33 -2 -15 9 -22 2 -50 -53 -42 -80 -74 -104 -162 -118 -45 -7 -69 -15 -69 -24 0 -19 72 -48 171 -68 85 -18 88 -18 182 4 108 25 211 30 205 10 -7 -20 -49 -38 -90 -38 l-38 0 0 -60 c0 -47 3 -60 15 -60 20 0 87 62 131 121 l36 49 185 0 185 0 68 49 c38 28 90 56 117 64 l48 14 3 54 c2 29 8 59 14 66 13 16 50 17 66 1 9 -9 12 12 12 97 0 85 3 112 16 126 22 24 13 34 -66 74 -90 45 -110 67 -110 121 0 46 33 97 71 109 19 6 19 8 5 24 -23 26 -20 40 20 96 32 45 35 54 30 99 -9 82 -35 104 -168 141 -39 10 -63 23 -74 40 l-16 25 -290 0 c-269 0 -291 1 -328 20 -22 11 -43 20 -47 19 -4 -1 -47 -7 -95 -14z m474 -137 c31 -56 52 -59 76 -13 l18 37 42 -47 c41 -47 76 -109 87 -155 4 -20 -4 -35 -40 -74 -25 -26 -45 -50 -45 -52 0 -2 18 -4 40 -4 47 0 49 -8 14 -44 -35 -34 -111 -56 -196 -56 l-68 0 0 228 c0 126 3 232 6 235 13 12 43 -13 66 -55z m243 -43 c0 -23 -5 -31 -22 -33 -26 -4 -41 31 -22 54 20 24 44 13 44 -21z m-447 -306 c-4 -74 -22 -104 -58 -97 -35 7 15 168 52 168 6 0 9 -28 6 -71z m552 -57 c0 -12 -47 -32 -73 -32 -18 1 -16 4 13 20 38 21 60 25 60 12z m-545 -82 c0 -7 -6 -15 -12 -17 -8 -3 -13 4 -13 17 0 13 5 20 13 18 6 -3 12 -11 12 -18z m270 -21 c67 -17 81 -36 99 -136 28 -151 30 -145 -81 -254 -54 -53 -106 -99 -116 -102 -29 -11 -64 10 -76 44 -17 48 -13 173 8 269 10 47 22 109 26 138 l7 52 45 0 c24 0 64 -5 88 -11z m-281 -181 c-7 -69 -14 -88 -14 -42 l0 29 -25 -30 -24 -30 -1 68 0 67 35 0 36 0 -7 -62z m626 -42 c0 -15 -65 -97 -68 -87 -8 23 30 91 50 91 10 0 18 -2 18 -4z m-150 -181 c0 -8 -7 -15 -15 -15 -8 0 -15 7 -15 15 0 8 7 15 15 15 8 0 15 -7 15 -15z" />
+                    <path
+                        d="M2146 1555 c-253 -101 -372 -200 -435 -365 -42 -107 -51 -173 -51 -354 0 -150 1 -162 20 -174 20 -12 61 -85 75 -132 23 -79 33 -89 119 -115 160 -48 514 -125 575 -125 38 0 169 65 276 135 80 54 176 154 213 223 114 213 61 523 -121 710 -129 133 -306 213 -500 227 -77 5 -87 3 -171 -30z m251 -70 c59 -18 127 -83 167 -163 28 -55 61 -174 75 -267 6 -42 9 -50 10 -26 1 22 5 31 10 25 16 -15 17 -224 2 -269 -23 -67 -117 -257 -151 -303 l-31 -44 -164 4 c-187 3 -195 7 -234 98 -50 117 -83 416 -62 571 38 291 181 432 378 374z m243 -59 c0 -2 -7 -9 -15 -16 -12 -10 -15 -10 -15 4 0 9 7 16 15 16 8 0 15 -2 15 -4z m20 -41 c19 -23 8 -50 -20 -50 -16 0 -26 6 -28 18 -4 18 14 47 28 47 4 0 13 -7 20 -15z m-890 -271 c0 -8 -7 -14 -15 -14 -15 0 -21 21 -9 33 10 9 24 -2 24 -19z m1005 -221 c-4 -27 -13 -61 -20 -78 -13 -28 -13 -25 -14 48 -1 72 0 77 20 77 20 0 21 -4 14 -47z m-877 -118 c-3 -89 -1 -101 13 -98 22 6 42 -22 34 -47 -10 -30 -49 -23 -53 10 -2 14 -8 29 -13 35 -10 10 -12 218 -2 229 17 16 25 -34 21 -129z m70 83 c-3 -7 -11 -13 -18 -13 -7 0 -15 6 -17 13 -3 7 4 12 17 12 13 0 20 -5 18 -12z m0 -135 c2 -8 -5 -13 -17 -13 -12 0 -21 6 -21 16 0 18 31 15 38 -3z m-58 -192 c14 -27 2 -53 -24 -49 -21 3 -32 28 -22 54 8 20 33 17 46 -5z m790 -55 c0 -2 -7 -9 -15 -16 -12 -10 -15 -10 -15 4 0 9 7 16 15 16 8 0 15 -2 15 -4z" />
+                    <path d="M9700 1545 c-16 -20 -5 -45 20 -45 14 0 20 7 20 24 0 28 -24 41 -40 21z" />
+                    <path d="M3255 1400 c-3 -5 -1 -10 4 -10 6 0 11 5 11 10 0 6 -2 10 -4 10 -3 0 -8 -4 -11 -10z" />
+                    <path d="M6030 1047 c0 -19 10 -27 26 -20 21 8 17 33 -6 33 -11 0 -20 -6 -20 -13z" />
+                </g>
+            </svg> 
+             <!-- <a class="navbar-brand navbar-brand-font" href="#" style="color: blanchedalmond; font-size: x-large;">JOB WIZ</a>   -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color: white; font-size: xx-large;">≡</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active space-menu-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>                 
+                    <li class="nav-item space-menu-item">
+                        <a class="nav-link" href="jobseeker.html">Job Seeker</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item space-menu-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                    <li class="nav-item space-menu-item">
+                        <a class="nav-link" href="SignIn.html">Log In</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+    <div id="jobSeekerContent">
+        <h1>Welcome, Job Seeker!</h1>
+        <p>This is your personalized job seeker page.</p>
+
+        <!-- Profile Details -->
+        <h2>Your Profile</h2>
+        <form id="profileForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <button type="button" onclick="updateProfile()">Update Profile</button><br>
+        </form>
+
+        <!-- Apply for Job Form -->
+        <h2>Apply for Job</h2>
+        <form id="applyJobForm">
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" name="jobTitle" required><br>
+
+            <label for="coverLetter">Resume:</label>
+            <textarea id="coverLetter" name="Resume"></textarea>
+            <button type="button" onclick="uploadresume()">Upload Resume</button><br>
+
+            <label for="coverLetter">Cover Letter:</label>
+            <textarea id="coverLetter" name="coverLetter" rows="4"></textarea>
+
+            <button type="button" onclick="applyForJob()">Apply for Job</button><br>
+        </form>
+
+        <!-- Available Jobs -->
+        <h2>Available Jobs</h2>
+        <table id="jobTable">
+            <tr>
+                <th>Job Title</th>
+               
+                <!-- Add more job details as needed -->
+            </tr>
+            <!-- Display available jobs dynamically here -->
+        </table>
+        <div class="row">
+            <!-- Dynamic Cards for Recently Added Jobs -->
+            <!-- Card 1 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="images/DBK and Knightech Nepal Logo.png" class="card-img-top" height="150" width="150"
+                        alt="Company Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Company Name</h5>
+                        <p class="card-text">Job Title</p>
+                        <p class="card-text">
+                        <details>
+                            <summary>Job Description</summary>
+                            <p>Add Job Description here...</p>
+                        </details>
+                        </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="images/DBK and Knightech Nepal Logo.png" class="card-img-top" height="150" width="150"
+                        alt="DBK and Knightech Nepal Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Knightech Nepal</h5>
+                        <p class="card-text">Software Developer</p>
+                        <p class="card-text">
+                        <details>
+                            <summary>Job Description</summary>
+                            <p>Apply for the post in Sr. Software Developer..</p>
+                        </details>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="images/DBK and Knightech Nepal Logo.png" class="card-img-top" height="150" width="150"
+                        alt="DBK and Knightech Nepal Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Knightech Nepal</h5>
+                        <p class="card-text">Software Developer</p>
+                        <p class="card-text">
+                        <details>
+                            <summary>Job Description</summary>
+                            <p>Apply for the post in Sr. Software Developer..</p>
+                        </details>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="images/DBK and Knightech Nepal Logo.png" class="card-img-top" height="150" width="150"
+                        alt="DBK and Knightech Nepal Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Knightech Nepal</h5>
+                        <p class="card-text">Software Developer</p>
+                        <p class="card-text">
+                        <details>
+                            <summary>Job Description</summary>
+                            <p>Apply for the post in Sr. Software Developer..</p>
+                        </details>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="images/DBK and Knightech Nepal Logo.png" class="card-img-top" height="150" width="150"
+                        alt="DBK and Knightech Nepal Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Knightech Nepal</h5>
+                        <p class="card-text">Software Developer</p>
+                        <p class="card-text">
+                        <details>
+                            <summary>Job Description</summary>
+                            <p>Apply for the post in Sr. Software Developer..</p>
+                        </details>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Logout Button -->
+        <button type="button" onclick="logout()">Logout</button>
+    </div>
+
+    <div id="loginContent" style="display: none;">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            // Simulate login logic (replace this with actual authentication)
+            document.getElementById('jobSeekerContent').style.display = 'block';
+            document.getElementById('loginContent').style.display = 'none';
+        }
+
+        function logout() {
+            // Simulate logout logic (replace this with actual logout)
+            document.getElementById('jobSeekerContent').style.display = 'none';
+            document.getElementById('loginContent').style.display = 'block';
+        }
+
+        function updateProfile() {
+            // Simulate updating profile (replace this with actual profile update logic)
+            alert('Profile updated!');
+        }
+
+        function applyForJob() {
+            // Simulate applying for a job (replace this with actual application logic)
+            alert('Application submitted!');
+        }
+        function uploadresume() {
+            
+            alert('Resume Uploaded!');
+        }
+    </script>
+
+</body>
+</html>
+
